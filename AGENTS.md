@@ -65,6 +65,12 @@ The repo also builds a polished docs site. `team.md` and `links.md` contain **Ji
 
 **Strict-mode build** (catches broken links and missing pages): `mkdocs build --strict`. The GitHub Action runs this; if it fails, the deploy fails.
 
+### Why there's a `docs/` folder you've never seen
+
+MkDocs requires its `docs_dir` to be a sibling of `mkdocs.yml`, not the project root. We don't want to relocate `platforms/` and `operations/` just to satisfy that — downstream consumers depend on those paths. So `hooks/prepare_docs.py` runs `on_pre_build` and **copies** the source files from the repo root into a gitignored `docs/` folder. MkDocs then reads `docs/`.
+
+**Never edit anything inside `docs/`.** It's regenerated on every build. The source of truth is at the repo root (`README.md`, `team.md`, `links.md`, `platforms/*.md`, `operations/*.md`, `data/*.yaml`). If you want to add a new page to the site, create the markdown at the root, then register it in `mkdocs.yml`'s `nav:` block AND add it to `COPY_MAP` in `hooks/prepare_docs.py`.
+
 ### `data/people.yaml` schema
 
 ```yaml

@@ -1,35 +1,41 @@
 site_name: CTP Common
 site_description: NYU Abu Dhabi — Core Technology Platforms — single source of truth
 site_url: https://nyuad-ctp.github.io/ctp-common/   # adjust to your GitHub Pages URL
-repo_url: https://github.com/nyuad-ctp/ctp-common  # adjust to your repo URL
+repo_url: https://github.com/nyuad-ctp/ctp-common   # adjust to your repo URL
 repo_name: ctp-common
 edit_uri: edit/main/
 
-# Use the repo root as the docs source so we don't duplicate markdown files.
-docs_dir: .
+# Source markdown lives at the repo root (for downstream consumers).
+# A pre-build hook copies it into ./docs so MkDocs sees the conventional layout.
+docs_dir: docs
 site_dir: site
 
-# Don't surface infrastructure files as pages.
-exclude_docs: |
-  data/
-  examples/
-  scripts/
-  .github/
-  .git/
-  mkdocs.yml
-  requirements.txt
-  .gitignore
-  site/
+# Hooks run on every build, including `mkdocs serve` rebuilds.
+hooks:
+  - hooks/prepare_docs.py
+
+# `mkdocs serve` only watches docs_dir by default. Tell it to also watch the
+# source paths so edits at the repo root trigger a rebuild.
+watch:
+  - README.md
+  - AGENTS.md
+  - team.md
+  - links.md
+  - platforms
+  - operations
+  - data
+  - examples
+  - hooks
 
 theme:
   name: material
   language: en
   features:
-    - navigation.tabs           # top tabs
-    - navigation.sections       # sidebar sections
+    - navigation.tabs
+    - navigation.sections
     - navigation.expand
-    - navigation.indexes        # foo/index.md becomes the section landing page
-    - navigation.top            # back-to-top
+    - navigation.indexes
+    - navigation.top
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -56,6 +62,7 @@ theme:
 plugins:
   - search
   - macros:
+      # YAML paths are relative to mkdocs.yml (repo root).
       include_yaml:
         - data/people.yaml
         - data/links.yaml
@@ -76,8 +83,9 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 
+# Nav paths are relative to docs_dir (which is populated by the hook above).
 nav:
-  - Home: README.md
+  - Home: index.md
   - Team: team.md
   - Platforms:
     - Overview: platforms/index.md

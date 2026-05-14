@@ -1,6 +1,10 @@
 # MkDocs build output
 site/
 
+# Auto-populated by hooks/prepare_docs.py before each MkDocs build.
+# Never edit anything in here — change the source files at the repo root.
+docs/
+
 # Python
 __pycache__/
 *.pyc
