@@ -29,7 +29,7 @@ Per-platform chartfield codes (fund / dept / program / project) are managed inte
 
 ## Key contacts
 
-For the people named below, see [`people/adjacent-teams.md`](../people/adjacent-teams.md):
+For the people named below, see the **Adjacent teams** section of the [team page](../team.md):
 
 - Research Materials Acquisition (NetIDs `nm73`, `nd1508`, `ap6353`)
 - Accounts Payable (NetIDs `tt1332`, `bs3028`)

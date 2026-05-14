@@ -213,6 +213,22 @@ print(f'{len(links)} links checked; {len(miss)} missing: {miss}')
 
 All five should print clean output. If any fails, fix before committing.
 
+### Recommended: run `scripts/check_build.py` before every push
+
+`scripts/check_build.py` bundles every invariant agents and humans rely on:
+mkdocs config layout, the prepare-docs hook, nav targets, internal markdown
+links, YAML schemas, NetID foreign keys, Jinja render simulation, name
+uniqueness, and a sensitivity sweep. It exits non-zero on any failure with a
+specific message.
+
+```bash
+python3 scripts/check_build.py
+```
+
+The GitHub Action runs this **before** `mkdocs build --strict`, so a failure
+here will fail the deploy with a clear message instead of an opaque MkDocs
+warning. Treat a clean run as the gate for pushing.
+
 ---
 
 ## When in doubt
