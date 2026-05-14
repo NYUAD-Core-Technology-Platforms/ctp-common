@@ -1,0 +1,440 @@
+# Canonical roster of every person referenced in this repo.
+# This is the SINGLE SOURCE OF TRUTH for names, titles, NetIDs, and contact info.
+# Platform pages (platforms/*.md) reference people by `netid` only — never by name.
+#
+# Schema per record:
+#   netid:    string, primary key, NYUAD NetID
+#   name:     string, full display name
+#   role:     string, current title
+#   category: leadership | scientist | specialist | machine_shop | adjacent | service
+#   email:    string, NetID@nyu.edu (omit if generic mailbox; use `email_generic` instead)
+#   ext:      string, 5-digit NYUAD extension (dial +971 2 628 <ext> externally)
+#   mobile:   string, mobile phone with UAE local format
+#   office:   string, building/room
+#   platform: string|null, primary CTP platform id from platforms/<id>.md (null if cross-CTP or non-CTP)
+
+people:
+  # ─── Leadership ───────────────────────────────────────────────────────────
+  - netid: oa22
+    name: Osama Abdullah
+    role: Director, Core Technology Platforms
+    category: leadership
+    email: oa22@nyu.edu
+    ext: "84990"
+    mobile: "056 679 3378"
+    office: A2
+    platform: null
+  - netid: nh43
+    name: Nashwa Hanna
+    role: Associate Director, CTP Administration
+    category: leadership
+    email: nh43@nyu.edu
+    ext: "85230"
+    mobile: "056 207 2131"
+    office: "23"
+    platform: null
+  - netid: ke2055
+    name: Khalid El Sossa
+    role: Associate Director for Research Support
+    category: leadership
+    email: ke2055@nyu.edu
+    ext: "87744"
+    mobile: null
+    office: CTP Workstations
+    platform: null
+  - netid: jm9175
+    name: Jinna Magbitang
+    role: Admin Coordinator, CTP
+    category: leadership
+    email: jm9175@nyu.edu
+    ext: "87059"
+    mobile: "050 382 7968"
+    office: "23"
+    platform: null
+
+  # ─── Laboratories leadership (parent unit) ────────────────────────────────
+  - netid: md149
+    name: Michael Davis
+    role: Senior Director, Laboratories
+    category: leadership
+    email: md149@nyu.edu
+    ext: "84051"
+    mobile: "050 621 5771"
+    office: "16"
+    platform: null
+  - netid: je53
+    name: Jake Edmondson
+    role: Associate Director, Laboratory Operations and Maintenance
+    category: leadership
+    email: je53@nyu.edu
+    ext: "84756"
+    mobile: "056 194 5026"
+    office: null
+    platform: null
+  - netid: tia1
+    name: Tariq Abu Issa
+    role: Assistant Director, Laboratory Operations and Maintenance
+    category: leadership
+    email: tia1@nyu.edu
+    ext: "85425"
+    mobile: "050 563 6228"
+    office: null
+    platform: null
+  - netid: vd44
+    name: Vijay Dhanvi
+    role: Manager, Machine Shop
+    category: leadership
+    email: vd44@nyu.edu
+    ext: "84984"
+    mobile: "050 334 1932"
+    office: Machine Shop
+    platform: null
+  - netid: aa141
+    name: Ahmed Al Ansari
+    role: Manager, Research Store
+    category: leadership
+    email: aa141@nyu.edu
+    ext: "84531"
+    mobile: "050 641 7984"
+    office: null
+    platform: null
+
+  # ─── Research Instrumentation Scientists ──────────────────────────────────
+  - netid: hz3752
+    name: Hadi Zaatiti
+    role: Research Instrumentation Scientist I
+    category: scientist
+    email: hz3752@nyu.edu
+    ext: "84192"
+    mobile: "056 275 4921"
+    office: A2
+    platform: brain-imaging
+  - netid: jw180
+    name: James Weston
+    role: Research Instrumentation Scientist I — Materials
+    category: scientist
+    email: jw180@nyu.edu
+    ext: "85235"
+    mobile: "056 971 3572"
+    office: B2-202
+    platform: analytical-materials-characterization
+  - netid: la77
+    name: Liaqat Ali
+    role: Research Instrumentation Scientist I — Spectrometry
+    category: scientist
+    email: la77@nyu.edu
+    ext: "84714"
+    mobile: "055 461 0977"
+    office: B1
+    platform: spectrometry-spectroscopy
+  - netid: moc2
+    name: Matthew O'Connor
+    role: Research Instrumentation Scientist I — Spectroscopy
+    category: scientist
+    email: moc2@nyu.edu
+    ext: "84768"
+    mobile: "050 106 9118"
+    office: B1
+    platform: spectrometry-spectroscopy
+  - netid: mb9720
+    name: Maylis Boitet
+    role: Research Instrumentation Scientist I — Small Animal Imaging
+    category: scientist
+    email: mb9720@nyu.edu
+    ext: "87710"
+    mobile: "056 203 3842"
+    office: A2
+    platform: brain-imaging
+  - netid: mrk6
+    name: Mostafa Khair
+    role: Research Instrumentation Scientist I — Molecular and Cell Biology
+    category: scientist
+    email: mrk6@nyu.edu
+    ext: "87370"
+    mobile: "050 139 0828"
+    office: CTP Workstations
+    platform: molecular-cell-biology
+  - netid: ma39897
+    name: Mohamed Abdulhamid Ettabib
+    role: Research Instrumentation Scientist I — Photonics and Telecommunications
+    category: scientist
+    email: ma39897@nyu.edu
+    ext: "84293"
+    mobile: "056 162 7002"
+    office: A1-008/009
+    platform: photonics
+  - netid: oga2
+    name: Oraib Al-Ketan
+    role: Research Instrumentation Scientist I — Advanced Manufacturing
+    category: scientist
+    email: oga2@nyu.edu
+    ext: "87735"
+    mobile: "056 601 5004"
+    office: CTP Workstations
+    platform: advanced-manufacturing-electronics
+  - netid: qz19
+    name: Qiang Zhang
+    role: Research Instrumentation Scientist I — Micro-Fabrication
+    category: scientist
+    email: qz19@nyu.edu
+    ext: "87981"
+    mobile: "056 925 3269"
+    office: CTP Workstations
+    platform: microfabrication
+  - netid: rr142
+    name: Rachid Rezgui
+    role: Research Instrumentation Scientist II — Light Microscopy
+    category: scientist
+    email: rr142@nyu.edu
+    ext: "84472"
+    mobile: "055 483 3568"
+    office: Basement 1-105
+    platform: light-microscopy
+  - netid: rs8743
+    name: Rainer Straubinger
+    role: Research Instrumentation Scientist I — Electron Microscopy
+    category: scientist
+    email: rs8743@nyu.edu
+    ext: "84586"
+    mobile: "050 862 1458"
+    office: CTP Workstations
+    platform: analytical-materials-characterization
+  - netid: sv2102
+    name: Sabu Varghese
+    role: Research Instrumentation Scientist I — Solid State NMR
+    category: scientist
+    email: sv2102@nyu.edu
+    ext: "84469"
+    mobile: "050 541 9357"
+    office: B1
+    platform: spectrometry-spectroscopy
+  - netid: yh4887
+    name: Yao He
+    role: Research Instrumentation Scientist I — Analytical
+    category: scientist
+    email: yh4887@nyu.edu
+    ext: "84911"
+    mobile: "054 372 8740"
+    office: CTP Workstations
+    platform: analytical-materials-characterization
+
+  # ─── Research Instrumentation Specialists ─────────────────────────────────
+  - netid: au2411
+    name: Alejandro Usobiaga Fabian
+    role: Research Instrumentation Specialist II — Marine Sciences
+    category: specialist
+    email: au2411@nyu.edu
+    ext: null
+    mobile: "054 311 6038"
+    office: CTP Hub
+    platform: marine-biology
+  - netid: hp42
+    name: Haidee Paterson
+    role: Research Instrumentation Specialist I — Brain Imaging
+    category: specialist
+    email: hp42@nyu.edu
+    ext: "87635"
+    mobile: "050 821 8598"
+    office: A2
+    platform: brain-imaging
+  - netid: ljt7767
+    name: Lawrence Torres
+    role: Research Instrumentation Specialist II — CTP
+    category: specialist
+    email: ljt7767@nyu.edu
+    ext: "88749"
+    mobile: "055 222 0493"
+    office: CTP Workstations
+    platform: null  # cross-CTP
+  - netid: mga5
+    name: Marc Arnoux
+    role: Research Instrumentation Specialist I — Sequencing
+    category: specialist
+    email: mga5@nyu.edu
+    ext: "85327"
+    mobile: "056 677 3742"
+    office: CTP Workstations
+    platform: sequencing
+  - netid: ma8306
+    name: Muhammad Shiraz Ali
+    role: Research Instrumentation Specialist II — CTP
+    category: specialist
+    email: ma8306@nyu.edu
+    ext: "86632"
+    mobile: "052 890 1800"
+    office: CTP Workstations
+    platform: null  # cross-CTP
+  - netid: sxp8070
+    name: Samuel A. Prieto
+    role: Research Instrumentation Specialist II — Automation & Robotics
+    category: specialist
+    email: sxp8070@nyu.edu
+    ext: null
+    mobile: null
+    office: C3
+    platform: kinesis
+  - netid: pr2449
+    name: Prabu Raja
+    role: Research Instrumentation Specialist II — Mechanical Engineer
+    category: specialist
+    email: pr2449@nyu.edu
+    ext: "88063"
+    mobile: "050 147 4327"
+    office: C3, Centrifuge Lab
+    platform: advanced-manufacturing-electronics
+  - netid: rap9713
+    name: Rebekka Pentti
+    role: Research Instrumentation Specialist I — Marine Sciences
+    category: specialist
+    email: rap9713@nyu.edu
+    ext: "88068"
+    mobile: "058 135 5258"
+    office: CTP Hub
+    platform: marine-biology
+  - netid: sat5
+    name: Sneha Ann Thomas
+    role: Research Instrumentation Specialist I — CTP
+    category: specialist
+    email: sat5@nyu.edu
+    ext: "84276"
+    mobile: "050 814 9868"
+    office: CTP Workstations
+    platform: null  # cross-CTP
+
+  # ─── Machine Shop & technical support ─────────────────────────────────────
+  - netid: jg6720
+    name: Jinummon Govindan
+    role: CNC Machinist — CTP
+    category: machine_shop
+    email: jg6720@nyu.edu
+    ext: "84502"
+    mobile: "052 695 0517"
+    office: Machine Shop
+    platform: advanced-manufacturing-electronics
+
+  # ─── Adjacent teams — Research Materials Acquisition ──────────────────────
+  - netid: nm73
+    name: Nyavili Mulemba
+    role: Manager, Research Materials Acquisition
+    category: adjacent
+    email: nm73@nyu.edu
+    ext: "84421"
+    mobile: "050 581 7507"
+    office: B1
+    platform: null
+  - netid: nd1508
+    name: Neelima Dinil
+    role: Senior Specialist, Research Materials Acquisition
+    category: adjacent
+    email: nd1508@nyu.edu
+    ext: "87363"
+    mobile: "056 925 2182"
+    office: B1
+    platform: null
+  - netid: ap6353
+    name: Atul Prem
+    role: Senior Specialist, Research Materials Acquisition
+    category: adjacent
+    email: ap6353@nyu.edu
+    ext: "87893"
+    mobile: null
+    office: B2
+    platform: null
+
+  # ─── Adjacent teams — general lab support ─────────────────────────────────
+  - netid: ts1848
+    name: Vishnu TS
+    role: Office Assistant
+    category: adjacent
+    email: ts1848@nyu.edu
+    ext: "84596"
+    mobile: "050 372 1933"
+    office: null
+    platform: null
+  - netid: jm5524
+    name: Jonathan Magbitang
+    role: Provost Office (Niki)
+    category: adjacent
+    email: jm5524@nyu.edu
+    ext: "84776"
+    mobile: null
+    office: null
+    platform: null
+  - netid: ag5019
+    name: Albert Kiania
+    role: Consumables Operator, Research Stores
+    category: adjacent
+    email: ag5019@nyu.edu
+    ext: "85147"
+    mobile: null
+    office: null
+    platform: null
+  - netid: tt1332
+    name: Bhavya
+    role: Accounts Payable
+    category: adjacent
+    email: tt1332@nyu.edu
+    ext: "84690"
+    mobile: null
+    office: null
+    platform: null
+  - netid: bs3028
+    name: Marjorie
+    role: Accounts Payable
+    category: adjacent
+    email: bs3028@nyu.edu
+    ext: "84691"
+    mobile: null
+    office: null
+    platform: null
+  - netid: rd117
+    name: Asitha / Jazil
+    role: Logistics — Mail / Invoices
+    category: adjacent
+    email: rd117@nyu.edu
+    ext: "87205"
+    mobile: null
+    office: B2
+    platform: null
+
+# ─── Institutional services (no individuals — generic mailboxes) ────────────
+services:
+  - id: facilities
+    name: Facilities / Helpdesk (EFS)
+    email: nyuad.facilities@nyu.edu
+    phone: "88888 option 3"
+  - id: ehs_research
+    name: EHS Research Safety — Vendor/Contractor Access Request
+    email: nyuad.ehs-research@nyu.edu
+    phone: "84635"
+  - id: public_safety_id
+    name: Public Safety — Door / ID Access
+    email: nyuad.publicsafetyidaccess@nyu.edu
+    phone: "85594"
+  - id: public_safety_emergency
+    name: Public Safety — Emergencies (24/7)
+    email: nyuad.publicsafety247@nyu.edu
+    phone: "87777"
+  - id: it
+    name: IT Support
+    email: nyuad.it.help@nyu.edu
+    phone: "88888 option 1"
+  - id: hr
+    name: HR Advisors (PeopleLink)
+    email: nyuad.peoplelink@nyu.edu
+    phone: "88888 option 2"
+  - id: travel
+    name: Nirvana Travel
+    email: nyuad@ntravel.ae
+    phone: "87250"
+  - id: mailroom
+    name: Mail Services
+    email: null
+    phone: "84581"
+  - id: catering
+    name: Royal Catering Services
+    email: null
+    phone: "87199"
+
+# Phone format note: 5-digit numbers are NYUAD internal extensions.
+# Dial +971 2 628 <ext> from outside the campus network.

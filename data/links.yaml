@@ -1,0 +1,20 @@
+# Canonical public-facing URLs and generic contacts for CTP.
+# Anything that's NOT internal-only should live here so downstream repos can pull it.
+
+public:
+  ctp_website: https://nyuad.nyu.edu/en/research/facilities-and-support/core-technology-platforms.html
+  linktree: https://linktr.ee/CTPNYUAD
+  booking_system: https://corelabs.abudhabi.nyu.edu     # CTPSS — requires NYU network/VPN
+  requisition_form: https://docs.google.com/forms/d/e/1FAIpQLSewUcPh-me_TIw0wTxYVOP-v93ibHpKusiT3CpmfuWLgafvkw/viewform
+  competitive_bid_exception: https://services.nyuad.nyu.edu/forms/competitive-bid-exception
+
+contact:
+  generic_email: nyuad.admin.ctp@nyu.edu        # public-facing CTP admin mailbox
+  user_group_email: CTP-group@nyu.edu           # training & equipment-access requests (users)
+  all_members_email: nyuad.ctp@nyu.edu          # distribution list — reaches every CTP staff member
+
+address:
+  line1: Saadiyat Island
+  line2: P.O. Box 129188
+  city: Abu Dhabi
+  country: United Arab Emirates

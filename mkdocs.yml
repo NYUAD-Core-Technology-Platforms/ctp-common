@@ -1,0 +1,100 @@
+site_name: CTP Common
+site_description: NYU Abu Dhabi — Core Technology Platforms — single source of truth
+site_url: https://nyuad-ctp.github.io/ctp-common/   # adjust to your GitHub Pages URL
+repo_url: https://github.com/nyuad-ctp/ctp-common  # adjust to your repo URL
+repo_name: ctp-common
+edit_uri: edit/main/
+
+# Use the repo root as the docs source so we don't duplicate markdown files.
+docs_dir: .
+site_dir: site
+
+# Don't surface infrastructure files as pages.
+exclude_docs: |
+  data/
+  examples/
+  scripts/
+  .github/
+  .git/
+  mkdocs.yml
+  requirements.txt
+  .gitignore
+  site/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs           # top tabs
+    - navigation.sections       # sidebar sections
+    - navigation.expand
+    - navigation.indexes        # foo/index.md becomes the section landing page
+    - navigation.top            # back-to-top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - macros:
+      include_yaml:
+        - data/people.yaml
+        - data/links.yaml
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - Home: README.md
+  - Team: team.md
+  - Platforms:
+    - Overview: platforms/index.md
+    - Analytical & Materials Characterization: platforms/analytical-materials-characterization.md
+    - Spectrometry & Spectroscopy: platforms/spectrometry-spectroscopy.md
+    - Microfabrication: platforms/microfabrication.md
+    - Molecular & Cell Biology: platforms/molecular-cell-biology.md
+    - Sequencing: platforms/sequencing.md
+    - High-Throughput Screening: platforms/high-throughput-screening.md
+    - Light Microscopy: platforms/light-microscopy.md
+    - Brain Imaging: platforms/brain-imaging.md
+    - Marine Biology: platforms/marine-biology.md
+    - Advanced Manufacturing & Electronics: platforms/advanced-manufacturing-electronics.md
+    - Photonics: platforms/photonics.md
+    - Kinesis: platforms/kinesis.md
+  - Operations:
+    - Scheduling: operations/scheduling.md
+    - Procurement: operations/procurement.md
+  - Public links: links.md
+  - For agents: AGENTS.md
