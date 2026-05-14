@@ -1,0 +1,7 @@
+# This file exists so that the `docs/` directory is committed to git.
+#
+# MkDocs validates that `docs_dir` exists *before* any hook runs, so we
+# need this folder to be present at checkout time. The actual content
+# (everything else in this directory) is generated on every build by
+# `hooks/prepare_docs.py` and is gitignored. Don't add anything here
+# by hand — edit the source files at the repo root instead.

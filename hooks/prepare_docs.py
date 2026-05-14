@@ -40,9 +40,17 @@ COPY_MAP: dict[str, str] = {
 
 
 def on_pre_build(config, **kwargs):
-    if DOCS.exists():
-        shutil.rmtree(DOCS)
+    # Wipe everything inside docs/ EXCEPT .gitkeep (which is tracked so the
+    # directory exists at checkout — MkDocs validates docs_dir before this
+    # hook runs).
     DOCS.mkdir(parents=True, exist_ok=True)
+    for entry in DOCS.iterdir():
+        if entry.name == ".gitkeep":
+            continue
+        if entry.is_file() or entry.is_symlink():
+            entry.unlink()
+        else:
+            shutil.rmtree(entry)
 
     for src, dst in COPY_MAP.items():
         src_path = ROOT / src

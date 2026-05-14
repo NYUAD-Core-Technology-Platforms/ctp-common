@@ -3,7 +3,10 @@ site/
 
 # Auto-populated by hooks/prepare_docs.py before each MkDocs build.
 # Never edit anything in here — change the source files at the repo root.
-docs/
+# docs/.gitkeep is the only file tracked so the directory exists at
+# checkout time (MkDocs validates docs_dir before any hook runs).
+docs/*
+!docs/.gitkeep
 
 # Python
 __pycache__/
