@@ -312,6 +312,44 @@ people:
     office: Machine Shop
     platform: advanced-manufacturing-electronics
 
+  # ─── New members (joined 2026-09; role, category, platform to be confirmed)
+  - netid: wdp1
+    name: William Pressley
+    role: null       # to be confirmed
+    category: null   # to be confirmed: scientist | specialist | leadership | machine_shop | adjacent
+    email: wdp1@nyu.edu
+    ext: null
+    mobile: null
+    office: null
+    platform: null
+  - netid: fq5
+    name: Fatin Qamash
+    role: null       # to be confirmed
+    category: null   # to be confirmed
+    email: fq5@nyu.edu
+    ext: null
+    mobile: null
+    office: null
+    platform: null
+  - netid: raa10100
+    name: Rauda Alshamsi
+    role: null       # to be confirmed
+    category: null   # to be confirmed
+    email: raa10100@nyu.edu
+    ext: null
+    mobile: null
+    office: null
+    platform: null
+  - netid: jc11301
+    name: Julia Chaplinska
+    role: null       # to be confirmed
+    category: null   # to be confirmed
+    email: jc11301@nyu.edu
+    ext: null
+    mobile: null
+    office: null
+    platform: null
+
   # ─── Adjacent teams — Research Materials Acquisition ──────────────────────
   - netid: nm73
     name: Nyavili Mulemba
