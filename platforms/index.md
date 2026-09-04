@@ -16,3 +16,4 @@ One-line summary of every Core Technology Platform. Click the title for full des
 | [Advanced Manufacturing & Electronics](advanced-manufacturing-electronics.md) | Design and fabrication of custom parts and PCBs, from micro to macro | SLS metal/polymer 3D printing, CNC, CT scanning, EDM, water-jet, PCB plotting |
 | [Photonics](photonics.md) | Characterization of optical/electronic devices for high-bit-rate telecom | Tunable lasers, BERTs, lightwave/signal/component analyzers |
 | [Kinesis](kinesis.md) | Motion experimentation arena and high-performance workspace | Motion-capture (Vicon), VR, drones, robotic arm (KUKA iiwa) |
+| [Veterinary Facility](veterinary-facility.md) | Animal husbandry, welfare, and clinical veterinary care supporting animal-based research | Husbandry, clinical care, facility operations |
