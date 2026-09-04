@@ -7,6 +7,7 @@
 #   name:     string, full display name
 #   role:     string, current title
 #   category: leadership | scientist | specialist | machine_shop | adjacent | service
+#   team_lead: true when the person is a CTP team/cluster lead (omit otherwise)
 #   email:    string, NetID@nyu.edu (omit if generic mailbox; use `email_generic` instead)
 #   ext:      string, 5-digit NYUAD extension (dial +971 2 628 <ext> externally)
 #   mobile:   string, mobile phone with UAE local format
@@ -19,6 +20,7 @@ people:
     name: Osama Abdullah
     role: Director, Core Technology Platforms Operations
     category: leadership
+    team_lead: true
     email: oa22@nyu.edu
     ext: "84990"
     mobile: "056 679 3378"
@@ -104,6 +106,7 @@ people:
     name: Hadi Zaatiti
     role: Research Instrumentation Scientist I
     category: scientist
+    team_lead: true
     email: hz3752@nyu.edu
     ext: "84192"
     mobile: "056 275 4921"
@@ -113,6 +116,7 @@ people:
     name: James Weston
     role: Research Instrumentation Scientist I — Materials
     category: scientist
+    team_lead: true
     email: jw180@nyu.edu
     ext: "85235"
     mobile: "056 971 3572"
@@ -131,6 +135,7 @@ people:
     name: Matthew O'Connor
     role: Research Instrumentation Scientist II - Spectroscopy
     category: scientist
+    team_lead: true
     email: moc2@nyu.edu
     ext: "84768"
     mobile: "050 106 9118"
@@ -167,6 +172,7 @@ people:
     name: Oraib Al-Ketan
     role: Research Instrumentation Scientist II - Advanced Manufacturing
     category: scientist
+    team_lead: true
     email: oga2@nyu.edu
     ext: "87735"
     mobile: "056 601 5004"
@@ -223,6 +229,7 @@ people:
     name: Alejandro Usobiaga (Uso)
     role: Research Instrumentation Specialist II — Marine Sciences
     category: specialist
+    team_lead: true
     email: au2411@nyu.edu
     ext: "85638"
     mobile: "054 311 6038"

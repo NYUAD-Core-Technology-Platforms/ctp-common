@@ -16,6 +16,17 @@ Everyone in this page is generated from [`data/people.yaml`](https://github.com/
 | {{ p.role }} | **{{ p.name }}** | [{{ p.email }}](mailto:{{ p.email }}) | {{ p.ext or '—' }} | {{ p.mobile or '—' }} | {{ p.office or '—' }} |
 {% endfor %}
 
+## Team / Cluster Leads
+
+The coordination leads across CTP, as recorded in [`data/people.yaml`](https://github.com/NYUAD-Core-Technology-Platforms/ctp-common/blob/main/data/people.yaml) (`team_lead: true`).
+
+| Name | Role | Email | Ext. | Mobile |
+|------|------|-------|------|--------|
+{% set leads = people | selectattr('team_lead', 'defined') | selectattr('team_lead') | list %}
+{% for p in leads -%}
+| **{{ p.name }}** | {{ p.role }} | [{{ p.email }}](mailto:{{ p.email }}) | {{ p.ext or '-' }} | {{ p.mobile or '-' }} |
+{% endfor %}
+
 ## Research Instrumentation Scientists
 
 | Name | Platform | Email | Ext. | Mobile | Office |
