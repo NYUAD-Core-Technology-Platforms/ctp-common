@@ -1,0 +1,37 @@
+# CTP clusters: who belongs to which team and who leads it (org chart,
+# September 2026). SINGLE SOURCE OF TRUTH for cluster composition.
+# People are referenced by netid (see data/people.yaml). A null lead means the
+# cluster lead is to be named; until then the Director validates that
+# cluster's goals. No Team members are validated by the Director as well.
+# Downstream consumer: the strategy site's goals workspace mirrors this file.
+clusters:
+  - id: marine-sciences
+    name: Marine Sciences
+    lead: au2411
+    members: [rap9713]
+  - id: spectrometry-spectroscopy
+    name: Spectrometry & Spectroscopy
+    lead: moc2
+    members: [la77, sv2102, ma8306]
+  - id: biomedical-imaging
+    name: Biomedical Imaging
+    lead: null   # to be named
+    members: [hp42, mb9720, hz3752]
+  - id: amk-photonics
+    name: Advanced Manufacturing, Kinesis & Photonics
+    lead: oga2
+    members: [ma39897, sxp8070, pr2449, vd44, jg6720]
+  - id: analytical-materials-characterization
+    name: Analytical & Materials Characterization
+    lead: jw180
+    members: [qz19, yh4887, rs8743]
+  - id: mcb-sequencing
+    name: MCB & Sequencing
+    lead: null   # to be named
+    members: [sat5, mrk6, mga5]
+  - id: vivarium
+    name: Vivarium
+    lead: wdp1
+    members: [fq5, raa10100, jc11301]
+no_team: [rr142, ljt7767]
+default_validator: oa22   # the Director validates vacant clusters and No Team
