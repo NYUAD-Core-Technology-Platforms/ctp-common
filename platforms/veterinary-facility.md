@@ -14,7 +14,7 @@ techniques:
 
 The Veterinary Facility supports animal-based research at NYU Abu Dhabi: day-to-day husbandry and animal welfare, clinical veterinary care, and facility operations for researchers working with animal models.
 
-Oversight: William Dudley Pressley, Senior Assistant Director, Specialist Research Labs (wdp1).
+Oversight: the Senior Assistant Director, Specialist Research Labs (netid `wdp1`; name and contact in the [team directory](../team.md)).
 
 ## Team
 
