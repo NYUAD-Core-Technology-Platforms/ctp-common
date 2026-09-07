@@ -1,4 +1,4 @@
-site_name: CTP Common
+site_name: Core Technology Platforms
 site_description: NYU Abu Dhabi — Core Technology Platforms — single source of truth
 site_url: https://nyuad-ctp.github.io/ctp-common/   # adjust to your GitHub Pages URL
 repo_url: https://github.com/nyuad-ctp/ctp-common   # adjust to your repo URL
@@ -104,8 +104,3 @@ nav:
     - Photonics: platforms/photonics.md
     - Kinesis: platforms/kinesis.md
     - Veterinary Facility: platforms/veterinary-facility.md
-  - Operations:
-    - Scheduling: operations/scheduling.md
-    - Procurement: operations/procurement.md
-  - Public links: links.md
-  - For agents: AGENTS.md

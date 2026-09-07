@@ -1,6 +1,6 @@
 # Team
 
-Everyone in this page is generated from [`data/people.yaml`](https://github.com/nyuad-ctp/ctp-common/blob/main/data/people.yaml) — that file is the single source of truth. Edit it to update the directory.
+Everyone in CTP, with contacts. Generated from the [ctp-common repository](https://github.com/NYUAD-Core-Technology-Platforms/ctp-common); to update an entry, edit the data there.
 
 {% set leadership = people | selectattr('category', 'equalto', 'leadership') | list %}
 {% set scientists = people | selectattr('category', 'equalto', 'scientist') | list %}
@@ -10,55 +10,55 @@ Everyone in this page is generated from [`data/people.yaml`](https://github.com/
 
 ## Leadership
 
-| Role | Name | Email | Ext. | Mobile | Office |
-|------|------|-------|------|--------|--------|
+| Role | Name | NetID | Email | Ext. | Mobile | Office |
+|------|------|-------|-------|------|--------|--------|
 {% for p in leadership -%}
-| {{ p.role }} | **{{ p.name }}** | [{{ p.email }}](mailto:{{ p.email }}) | {{ p.ext or '—' }} | {{ p.mobile or '—' }} | {{ p.office or '—' }} |
+| {{ p.role }} | **{{ p.name }}** | `{{ p.netid }}` | [{{ p.email }}](mailto:{{ p.email }}) | {{ p.ext or '—' }} | {{ p.mobile or '—' }} | {{ p.office or '—' }} |
 {% endfor %}
 
 ## Team / Cluster Leads
 
 The coordination leads across CTP, as recorded in [`data/people.yaml`](https://github.com/NYUAD-Core-Technology-Platforms/ctp-common/blob/main/data/people.yaml) (`team_lead: true`).
 
-| Name | Role | Email | Ext. | Mobile |
+| Name | Role | NetID | Email | Ext. | Mobile |
 |------|------|-------|------|--------|
 {% set leads = people | selectattr('team_lead', 'defined') | selectattr('team_lead') | list %}
 {% for p in leads -%}
-| **{{ p.name }}** | {{ p.role }} | [{{ p.email }}](mailto:{{ p.email }}) | {{ p.ext or '-' }} | {{ p.mobile or '-' }} |
+| **{{ p.name }}** | {{ p.role }} | `{{ p.netid }}` | [{{ p.email }}](mailto:{{ p.email }}) | {{ p.ext or '-' }} | {{ p.mobile or '-' }} |
 {% endfor %}
 
 ## Research Instrumentation Scientists
 
-| Name | Platform | Email | Ext. | Mobile | Office |
-|------|----------|-------|------|--------|--------|
+| Name | NetID | Platform | Email | Ext. | Mobile | Office |
+|------|----------|-------|-------|------|--------|--------|
 {% for p in scientists -%}
-| **{{ p.name }}** | {% if p.platform %}[{{ p.platform }}](platforms/{{ p.platform }}.md){% else %}cross-CTP{% endif %} | [{{ p.email }}](mailto:{{ p.email }}) | {{ p.ext or '—' }} | {{ p.mobile or '—' }} | {{ p.office or '—' }} |
+| **{{ p.name }}** | `{{ p.netid }}` | {% if p.platform %}[{{ p.platform }}](platforms/{{ p.platform }}.md){% else %}cross-CTP{% endif %} | [{{ p.email }}](mailto:{{ p.email }}) | {{ p.ext or '—' }} | {{ p.mobile or '—' }} | {{ p.office or '—' }} |
 {% endfor %}
 
 ## Research Instrumentation Specialists
 
-| Name | Platform | Email | Ext. | Mobile | Office |
-|------|----------|-------|------|--------|--------|
+| Name | NetID | Platform | Email | Ext. | Mobile | Office |
+|------|----------|-------|-------|------|--------|--------|
 {% for p in specialists -%}
-| **{{ p.name }}** | {% if p.platform %}[{{ p.platform }}](platforms/{{ p.platform }}.md){% else %}cross-CTP{% endif %} | [{{ p.email }}](mailto:{{ p.email }}) | {{ p.ext or '—' }} | {{ p.mobile or '—' }} | {{ p.office or '—' }} |
+| **{{ p.name }}** | `{{ p.netid }}` | {% if p.platform %}[{{ p.platform }}](platforms/{{ p.platform }}.md){% else %}cross-CTP{% endif %} | [{{ p.email }}](mailto:{{ p.email }}) | {{ p.ext or '—' }} | {{ p.mobile or '—' }} | {{ p.office or '—' }} |
 {% endfor %}
 
 ## Machine Shop & technical support
 
-| Name | Role | Email | Ext. | Mobile | Office |
-|------|------|-------|------|--------|--------|
+| Name | Role | NetID | Email | Ext. | Mobile | Office |
+|------|------|-------|-------|------|--------|--------|
 {% for p in machine_shop -%}
-| **{{ p.name }}** | {{ p.role }} | [{{ p.email }}](mailto:{{ p.email }}) | {{ p.ext or '—' }} | {{ p.mobile or '—' }} | {{ p.office or '—' }} |
+| **{{ p.name }}** | {{ p.role }} | `{{ p.netid }}` | [{{ p.email }}](mailto:{{ p.email }}) | {{ p.ext or '—' }} | {{ p.mobile or '—' }} | {{ p.office or '—' }} |
 {% endfor %}
 
 ## Adjacent teams
 
 Research Materials Acquisition, accounts, logistics, and other day-to-day partners.
 
-| Name | Role | Email | Ext. | Mobile | Office |
-|------|------|-------|------|--------|--------|
+| Name | Role | NetID | Email | Ext. | Mobile | Office |
+|------|------|-------|-------|------|--------|--------|
 {% for p in adjacent -%}
-| **{{ p.name }}** | {{ p.role }} | [{{ p.email }}](mailto:{{ p.email }}) | {{ p.ext or '—' }} | {{ p.mobile or '—' }} | {{ p.office or '—' }} |
+| **{{ p.name }}** | {{ p.role }} | `{{ p.netid }}` | [{{ p.email }}](mailto:{{ p.email }}) | {{ p.ext or '—' }} | {{ p.mobile or '—' }} | {{ p.office or '—' }} |
 {% endfor %}
 
 ## Institutional services
