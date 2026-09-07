@@ -33,5 +33,6 @@ clusters:
     name: Vivarium
     lead: wdp1
     members: [fq5, raa10100, jc11301]
+administration: [nh43, jm9175]   # CTP Administration; no cluster, shown with the Director
 no_team: [rr142, ljt7767]
 default_validator: oa22   # the Director validates vacant clusters and No Team
