@@ -27,7 +27,6 @@ DOCS = ROOT / "docs"
 # README.md becomes index.md so MkDocs renders it as the site landing page.
 COPY_MAP: dict[str, str] = {
     "home.md":    "index.md",
-    "README.md":  "README.md",
     "AGENTS.md":  "AGENTS.md",
     "team.md":    "team.md",
     "orgchart.md": "orgchart.md",
