@@ -29,6 +29,7 @@ COPY_MAP: dict[str, str] = {
     "README.md":  "index.md",
     "AGENTS.md":  "AGENTS.md",
     "team.md":    "team.md",
+    "orgchart.md": "orgchart.md",
     "links.md":   "links.md",
     "platforms":  "platforms",
     "operations": "operations",

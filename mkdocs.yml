@@ -65,6 +65,7 @@ plugins:
       # YAML paths are relative to mkdocs.yml (repo root).
       include_yaml:
         - data/people.yaml
+        - data/clusters.yaml
         - data/links.yaml
 
 markdown_extensions:
@@ -87,6 +88,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Team: team.md
+  - Org chart: orgchart.md
   - Platforms:
     - Overview: platforms/index.md
     - Analytical & Materials Characterization: platforms/analytical-materials-characterization.md
