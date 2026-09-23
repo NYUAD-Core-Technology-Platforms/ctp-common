@@ -20,7 +20,7 @@ clusters:
   - id: amk-photonics
     name: Advanced Manufacturing, Kinesis & Photonics
     lead: oga2
-    members: [ma39897, sxp8070, pr2449, vd44, jg6720]
+    members: [mae9897, sxp8070, pr2449, vd44, jg6720]
   - id: analytical-materials-characterization
     name: Analytical & Materials Characterization
     lead: jw180

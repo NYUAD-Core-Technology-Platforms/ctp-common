@@ -127,7 +127,7 @@ See [`examples/extract.py`](examples/extract.py) for a runnable demo covering: f
 | 8 | `brain-imaging` | Brain Imaging | `hp42` · `hz3752` · `mb9720` |
 | 9 | `marine-biology` | Marine Biology | `au2411` · `rap9713` |
 | 10 | `advanced-manufacturing-electronics` | Advanced Manufacturing & Electronics | `oga2` · `pr2449` · `jg6720` |
-| 11 | `photonics` | Photonics | `ma39897` |
+| 11 | `photonics` | Photonics | `mae9897` |
 | 12 | `kinesis` | Kinesis | `sxp8070` |
 
 The platform `id` matches the filename (`platforms/<id>.md`) and the `platform` field on each person in `data/people.yaml`.

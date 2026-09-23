@@ -4,7 +4,7 @@ name: Photonics
 short_name: PH
 location: A1-008/009
 # Specialists are foreign keys — look up names/titles/contact in people/operations-team.md
-specialists: [ma39897]
+specialists: [mae9897]
 techniques:
   - Bit error rate testing (up to 400 Gb/s)
   - Coherent detection
